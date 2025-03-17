@@ -20,7 +20,7 @@ public class HopitalApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        //premier facent d'ajouter un patient
+ /*       //premier facent d'ajouter un patient
         Patient patient = new Patient();
         patient.setId(null);
         patient.setNom("Oussama");
@@ -37,6 +37,10 @@ public class HopitalApplication implements CommandLineRunner {
                 .dateNaissance(new Date())
                 .score(56)
                 .malade(true)
-                .build();
+                .build(); */
+        patientRepository.save(new Patient(null,"Oussama",new Date(),false,34));
+        patientRepository.save(new Patient(null,"Hanane",new Date(),false,3334));
+        patientRepository.save(new Patient(null,"Mohammed",new Date(),true,114));
+
     }
 }
