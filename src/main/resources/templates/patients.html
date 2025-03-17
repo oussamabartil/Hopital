@@ -6,21 +6,28 @@
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
 </head>
 <body>
-<h2>Liste patients</h2>
-<table class="table">
-    <thead>
-    <tr>
-        <th>ID</th><th>Nom</th><th>Date</th><th>Malade</th><th>Score</th>
-    </tr>
-    <tr th:each="p:${ListsPatients}">
-        <td th:text="${p.id}"></td>
-        <td th:text="${p.nom}"></td>
-        <td th:text="${p.dateNaissance}"></td>
-        <td th:text="${p.malade}"></td>
-        <td th:text="${p.score}"></td>
+<div class="p-3">
+    <div class="card">
+        <div class="card-header">Liste patients</div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th><th>Nom</th><th>Date</th><th>Malade</th><th>Score</th>
+                </tr>
+                <tr th:each="p:${ListsPatients}">
+                    <td th:text="${p.id}"></td>
+                    <td th:text="${p.nom}"></td>
+                    <td th:text="${p.dateNaissance}"></td>
+                    <td th:text="${p.malade}"></td>
+                    <td th:text="${p.score}"></td>
 
-    </tr>
-    </thead>
-</table>
+                </tr>
+                </thead>
+            </table>
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
