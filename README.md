@@ -55,7 +55,7 @@ L'application permet de supprimer des patients avec confirmation avant la suppre
 
 ## Images
 1. Installation des dépendances
-   ![Installation des dépendances](images/1installation-des-dependance-.jpg)
+   ![Installation des dépendances](images/1installation-des-dependance.jpg)
 2. Ajout de la base de données
    ![Ajout de la base de données](images/2ajout-bd.jpg)
 3. Liste des patients
