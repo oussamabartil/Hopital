@@ -54,31 +54,31 @@ Il est possible de rechercher des patients par nom avec une pagination dynamique
 L'application permet de supprimer des patients avec confirmation avant la suppression.
 
 ## Images
-1. Installation des dépendances
+### 1. Installation des dépendances
    ![Installation des dépendances](images/1installation-des-dependance.jpg)
-2. Ajout de la base de données
+### 2. Ajout de la base de données
    ![Ajout de la base de données](images/2ajout-bd.jpg)
-3. Liste des patients
+### 3. Liste des patients
    ![Liste des patients](images/3liste-patients.jpg)
-4. Ajout de Bootstrap
+### 4. Ajout de Bootstrap
    ![Ajout de Bootstrap](images/4ajout-de-bootstrap.jpg)
-5.Design Bootstrap
+### 5.Design Bootstrap
    ![Design Bootstrap](images/5design-bootstrap.jpg)
-6. Avant la pagination
+### 6. Avant la pagination
    ![Avant la pagination](images/6avant-la-pagination.jpg)
-7. Après la pagination
+### 7. Après la pagination
    ![Après la pagination](images/7apres-pagination.jpg)
-8. Pagination avec paramètres
+### 8. Pagination avec paramètres
    ![Pagination avec paramètres](images/8pagination-en-utilisant-les-parametres.jpg)
-9. Application du design de la pagination
+### 9. Application du design de la pagination
    ![Application du design de la pagination](images/9appliquer-le-design-de-la-pagination.jpg)
-10. Surbrillance de la pagination
-    ![Surbrillance de la pagination](images/10surbrillance-pagination.jpg)
-11. Recherche des patients
-    ![Recherche des patients](images/11la-recherche.jpg)
-12. Ajout de la suppression des patients
-    ![Ajout de la suppression des patients](images/12ajouter-la-suppression-des-patient.jpg)
-13. Message de confirmation de suppression
-    ![Message de confirmation de suppression](images/13message-de-confirmation-de-supression.jpg)
-14. Utilisation des icônes Bootstrap
-    ![Utilisation des icônes Bootstrap](images/14utilisation-des-icons-bootstrap.png)
+### 10. Surbrillance de la pagination
+   ![Surbrillance de la pagination](images/10surbrillance-pagination.jpg)
+### 11. Recherche des patients
+   ![Recherche des patients](images/11la-recherche.jpg)
+### 12. Ajout de la suppression des patients
+   ![Ajout de la suppression des patients](images/12ajouter-la-suppression-des-patient.jpg)
+### 13. Message de confirmation de suppression
+   ![Message de confirmation de suppression](images/13message-de-confirmation-de-supression.jpg)
+### 14. Utilisation des icônes Bootstrap
+   ![Utilisation des icônes Bootstrap](images/14utilisation-des-icons-bootstrap.jpg)
