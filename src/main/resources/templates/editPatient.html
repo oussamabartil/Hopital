@@ -24,7 +24,7 @@
             </div>
             <div>
                 <label>Date Naissance</label>
-                <input class="form-control" type="date" name="dateNaissance" th:value="${patient.dateNaissance}">
+                <input class="form-control" type="date" name="dateNaissance" th:value="${#dates.format(patient.dateNaissance, 'yyyy-MM-dd')}">
                 <span th:errors="${patient.dateNaissance}"></span>
             </div>
             <div>
