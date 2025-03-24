@@ -30,7 +30,7 @@
             </div>
             <div>
                 <label>Score</label>
-                <input class="form-control" type="text" name="score" th:checked="${patient.score}">
+                <input class="form-control" type="text" name="score" th:value="${patient.score}">
                 <span th:errors="${patient.score}"></span>
             </div>
             <button type="submit" class="btn btn-primary">save</button>
