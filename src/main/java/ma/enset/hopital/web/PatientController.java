@@ -61,4 +61,12 @@ public class PatientController {
         patientRepository.save(patient);
         return "redirect:/formPatients";
     }
+
+    @GetMapping("/editPatient")
+    public String editPatient(Model model, Long id){
+        Patient patient = patientRepository.findById(id).orElse(null);
+        if (patient == null) throw new RuntimeException("Patient introuvable");
+        model.addAttribute("patient",patient);
+        return "formPatients";
+    }
 }
