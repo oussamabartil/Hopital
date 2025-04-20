@@ -19,7 +19,7 @@ public class AccountserviceImpl implements Accountservice {
     private AppRoleRepository appRoleRepository;
     private PasswordEncoder passwordEncoder;
     @Override
-    public AppUser addNewUser(String username, String password, String firstName, String email, String confirmPassword) {
+    public AppUser addNewUser(String username, String password, String email, String confirmPassword) {
         AppUser appUser = appUserRepository.findByUsername(username);
         if (appUser != null) throw new RuntimeException("this user already exist");
         if (!password.equals(confirmPassword))  throw new RuntimeException("Passwords not much");

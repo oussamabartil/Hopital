@@ -2,6 +2,7 @@ package ma.enset.hopital;
 
 import ma.enset.hopital.entities.Patient;
 import ma.enset.hopital.repository.PatientRepository;
+import ma.enset.hopital.security.service.Accountservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -75,6 +76,21 @@ public class HopitalApplication implements CommandLineRunner {
 
     }
 
+    @Bean
+    CommandLineRunner commandLineRunnerUserDetails(Accountservice accountservice){
+        return args -> {
+            accountservice.addNewRole("USER");
+            accountservice.addNewRole("ADMIN");
+            accountservice.addNewUser("user1","1234","user1@gmail.com","1234");
+            accountservice.addNewUser("user2","1234","user2@gmail.com","1234");
+            accountservice.addNewUser("admin","1234","admin@gmail.com","1234");
+
+        accountservice.addRoleToUser("user1","USER");
+        accountservice.addRoleToUser("user2","USER");
+        accountservice.addRoleToUser("admin","USER");
+        accountservice.addRoleToUser("admin","ADMIN");
+        };
+    }
     @Bean
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
